@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future - My Courses</title>
+    <link rel="stylesheet" href="/css/mycourses-style.css">
+    <link rel="icon" type="image/x-icon" href="/images/home/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="loginPrompt" class="login-prompt" style="display: none;">
+            <i class="fas fa-user-lock"></i>
+            <h2>Please Login First</h2>
+            <p style="margin: 20px 0; color: #666;">You need to login to enroll in courses and view your enrolled
+                courses.</p>
+            <a href="/html/login.html" class="btn">Go to Login</a>
+            <a href="/index.html" class="btn btn-secondary" style="margin-left: 10px;">Back to Home</a>
+        </div>
+
+        <div id="mainContent" style="display: none;">
+            <div class="header">
+                <div class="user-info">
+                    <img src="" alt="User Avatar" class="user-avatar" id="userAvatar">
+                    <div class="user-details">
+                        <h2 id="userName">Welcome</h2>
+                        <p id="userEmail"></p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="/index.html" class="btn btn-secondary">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <button onclick="logout()" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </div>
+
+            <div id="messageContainer"></div>
+
+            <div>
+                <h3 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    My Enrolled Courses (<span id="enrolledCount">0</span>)
+                </h3>
+                <div class="courses-grid" id="enrolledCourses"></div>
+            </div>
+
+            <div>
+                <h3 class="section-title">
+                    <i class="fas fa-book"></i>
+                    Available Courses
+                </h3>
+                <div class="courses-grid" id="availableCourses"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/mycourses-script.js"></script>
+</body>
+
+</html>

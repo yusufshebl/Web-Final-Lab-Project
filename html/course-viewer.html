@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Viewer - Bright Future</title>
+    <link rel="stylesheet" href="/css/courseviewer-style.css">
+    <link rel="icon" type="image/x-icon" href="/images/home/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="top-nav">
+        <h1>
+            <i class="fas fa-graduation-cap"></i>
+            <span id="courseTitle">Course Title</span>
+        </h1>
+        <div class="nav-actions">
+            <a href="/html/my-courses.html"><i class="fas fa-arrow-left"></i> My Courses</a>
+            <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Content</h2>
+                <p style="color: #6c757d; font-size: 14px; margin-top: 5px;">
+                    <span id="completedCount">0</span>/<span id="totalLessons">0</span> lessons completed
+                </p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+                <p class="progress-text" id="progressText">0% Complete</p>
+            </div>
+            <div class="lessons-list" id="lessonsList"></div>
+        </div>
+
+        <div class="main-content">
+            <button class="toggle-sidebar" id="toggleSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="video-container" id="videoContainer">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <h2>Select a lesson to start learning</h2>
+                </div>
+            </div>
+
+            <div class="lesson-content">
+                <div id="lessonDetails">
+                    <h1>Welcome to Your Course!</h1>
+                    <p style="color: #6c757d; margin-top: 10px;">
+                        Select a lesson from the sidebar to begin your learning journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/courseviewer-script.js"></script>
+</body>
+
+</html>

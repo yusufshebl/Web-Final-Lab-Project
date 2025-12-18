@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login-style.css">
+    <link rel="icon" type="image/x-icon" href="/images/home/icon.png">
+    <title>Bright Future - Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <div class="message" id="message"></div>
+        <div class="loader" id="loader"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Login</button>
+        </form>
+
+        <div class="test-accounts">
+            <h4>Test Accounts - Click to Auto-fill:</h4>
+            <button type="button" onclick="fillLogin('emilys', 'emilyspass')">Emily Johnson</button>
+            <button type="button" onclick="fillLogin('michaelw', 'michaelwpass')">Michael Williams</button>
+            <button type="button" onclick="fillLogin('sophiab', 'sophiabpass')">Sophia Brown</button>
+        </div>
+
+        <div class="user-info" id="userInfo"></div>
+        <div class="debug-info" id="debugInfo"></div>
+
+        <div class="back-home">
+            <a href="/index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <script src="/js/login-script.js"></script>
+</body>
+
+</html>
